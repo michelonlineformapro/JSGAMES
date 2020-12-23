@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <div id="showHide">
+            <p>Du texte</p>
+            <p>Du texte 2</p>
+        </div>
+        <button onclick="showHideBlock()" class="btn btn-outline-success" id="show-hide">MENU</button>
+
+
+        <div>
+          <h1 class="text-danger text-center">TROVER LE BON NOMBRES (CHIFFRES)</h1>
+          <button class="btn btn-info" id="generate-number" onclick="reloadGame()">GENERER LE NOMBRE</button>
+
+          <h3 id="generate-number">
+
+          </h3>
+
+          <div class="form-group">
+            <label for="number">Entrer votre réponse</label>
+            <input type="number" class="form-control" placeholder="Entrer votre réponse" name="" id="user-number">
+            <!--Ici indice-->
+            <h2 class="text-success" id="indices">
+
+            </h2>
+            <button class="btn btn-dark"  id="valide-reponse" onclick="findSecretNumber()">Valider votre réponse</button>
+          </div>
+        </div>
+
+
+        <div>
+          <h2 class="text-danger text-center">QUIZZ INFORMATIQUE</h2>
+          <button id="generate-question" onclick="quizzRandom()">JOUER</button>
+          <h3 id="question" class="text-info">La question</h3>
+
+          <button class="btn btn-success" id="reponse1">Reponse 1</button>
+          <button class="btn btn-warning" id="reponse2">Reponse 2</button>
+          <button class="btn btn-info" id="reponse3">Reponse 3</button>
+          <button class="btn btn-danger" id="reponse4">Reponse 4</button>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
